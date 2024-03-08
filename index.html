@@ -17,7 +17,8 @@
         theme: {
           extend: {
             colors: {
-              clifford: "#da373d",
+              "primary-color": "#FF4240",
+              "font-color": "#13131899",
             },
           },
         },
@@ -30,7 +31,14 @@
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
       rel="stylesheet"
     />
-
+    <!-- font-awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- custom styles -->
     <style>
       .font-manrope {
@@ -40,13 +48,167 @@
   </head>
   <body class="font-manrope">
     <header>
-    
+      <nav class="container mx-auto px-8 lg:px-24 my-8">
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-6 w-6"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>About</a></li>
+                <li><a>Pages</a></li>
+                <li><a>Blog</a></li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-2xl lg:text-4xl font-extrabold gap-0"
+              >Hockey<span class="text-primary-color">’</span>s</a
+            >
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1 text-[#424247]">
+              <li class="font-bold text-primary-color"><a>Home</a></li>
+              <li><a>About</a></li>
+              <li><a>Pages</a></li>
+              <li><a>Blog</a></li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end gap-x-6">
+            <i
+              class="hidden lg:inline fa-solid fa-magnifying-glass text-[#89898B]"
+            ></i>
+            <a class="btn bg-primary-color text-white px-6 py-4 font-bold"
+              >Get Ticket</a
+            >
+          </div>
+        </div>
+      </nav>
+      <div class="container relative mx-auto px-8 lg:px-24 mt-12 mb-24">
+        <div class="carousel w-full">
+            <!-- slide 1 -->
+            <div id="slide1" class="carousel-item relative w-full lg:h-[80vh]">
+              <img src="./Images/1.png" class="w-full" />
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide4" class="btn btn-circle">❮</a>
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <!-- slide 2 -->
+            <div id="slide2" class="carousel-item relative w-full lg:h-[80vh]">
+              <img src="./Images/2.png" class="w-full" />
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide1" class="btn btn-circle">❮</a>
+                <a href="#slide3" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <!-- slide 3 -->
+            <div id="slide3" class="carousel-item relative w-full lg:h-[80vh]">
+              <img src="./Images/3.png" class="w-full" />
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide2" class="btn btn-circle">❮</a>
+                <a href="#slide4" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+            <!-- slide 4 -->
+            <div id="slide4" class="carousel-item relative w-full lg:h-[80vh]">
+              <img src="./Images/4.png" class="w-full" />
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="bg-black lg:w-[566px] lg:h-[165px] p-8 rounded-xl lg:absolute lg:right-48 lg:-translate-y-60 mt-4"
+          >
+            <h3 class="font-extrabold text-lg lg:text-2xl text-white">
+              Meet all the heroes from the field
+            </h3>
+            <p class="font-medium text-sm lg:text-base opacity-60 text-white mt-4">
+              Welcome to Hockey’s. Dive into the world of hockey legends.
+              Connect with hero players and celebrate their incredible journeys!
+            </p>
+          </div>
+      </div>
     </header>
     <main>
-
+        <!-- hockeys club section -->
+        <section class="container relative mx-auto px-8 lg:px-24 mt-12 mb-24">
+            <div class="text-center mb-12">
+                <h2 class="font-extrabold text-2xl lg:text-4xl">Professional Hockeys Club</h2>
+                <p class="font-medium text-font-color lg:w-1/2 mx-auto mt-6">Elite hockey club offering thrilling matches, top-tier talent, and an unmatched fan experience. Join us for unforgettable moments on ice.</p>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-4">
+                <!-- card 1 -->
+                <div class="card ">
+                    <figure class="pt-5">
+                        <div class="radial-progress text-primary-color" style="--value:87;" role="progressbar">87%</div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title font-semibold text-xl mb-4">Player Facility</h2>
+                      <p class="font-medium text-font-color mx-auto">Elite player facility: top-tier amenities, personalized training, and unparalleled support.</p>
+                    </div>
+                  </div>
+                   <!-- card 2 -->
+                <div class="card ">
+                    <figure class="pt-5">
+                        <div class="radial-progress text-[#49D293]" style="--value:95;" role="progressbar">95%</div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title font-semibold text-xl mb-4">Experienced Coach</h2>
+                      <p class="font-medium text-font-color mx-auto">Expert coach: proven success, strategic leadership, player development focus.</p>
+                    </div>
+                  </div>
+                   <!-- card 3 -->
+                <div class="card ">
+                    <figure class="pt-5">
+                        <div class="radial-progress text-[#FFB546]" style="--value:90;" role="progressbar">90%</div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title font-semibold text-xl mb-4">Senior Player</h2>
+                      <p class="font-medium text-font-color  mx-auto">Veteran player: leadership, expertise, dedication, vital team contributor, mentor.</p>
+                    </div>
+                  </div>
+                   <!-- card 4 -->
+                <div class="card ">
+                    <figure class="pt-5">
+                        <div class="radial-progress text-[#4C8DF1]" style="--value:80;" role="progressbar">80%</div>
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title font-semibold text-xl mb-4">Training Ground</h2>
+                      <p class="font-medium text-font-color mx-auto">Hockey hub: elite training, cutting-edge facilities, professional development environment.</p>
+                    </div>
+                  </div>
+            </div>
+        </section>
     </main>
-    <footer>
-
-    </footer>
+    <footer></footer>
   </body>
 </html>
